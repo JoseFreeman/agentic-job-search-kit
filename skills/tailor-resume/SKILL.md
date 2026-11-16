@@ -15,7 +15,7 @@ So talk like a kind, competent friend. Use everyday words, and their words for t
 
 ## What you need
 
-The user's documents are in a `career/` folder, or in project documents with the same names, or in a `my-job-search.md` file they attach. Read `resume-base.md`, `resume-story-bank.md` and `resume-voice-profile.md`; if any is missing, use `career-setup` to build it. Ask for the posting if you don't have it.
+The user's documents are in a `career/` folder, or in project documents with the same names, or in a `my-job-search` file they attach (the newest, if there are several). Read `resume-base.md`, `resume-story-bank.md` and `resume-voice-profile.md`; if any is missing, use `career-setup` to build it. Ask for the posting if you don't have it. If their documents live in a `my-job-search` file they download, add what you made to it and give it back at the end under today's date (`my-job-search-<date>.md`, with -2 if you already gave them one today).
 
 ## Steps
 
@@ -40,7 +40,7 @@ The user's documents are in a `career/` folder, or in project documents with the
    - *Would they say it out loud?* Tell them which lines are their own words and which are your wording of their facts, and take their version of anything they would put differently.
    - Ask them to read it aloud once and change what doesn't sound like them.
 
-6. **Deliver.** Save the resume alone as `career/applications/<company>-<role>/resume.md`. Give them something they can send: a Word document if you can create files (a PDF too if they ask), otherwise clean text to copy into Word. A Markdown file is not a finished resume for this user. Add what you emphasized and why, and the gaps to be ready for.
+6. **Deliver.** Save the resume alone as `career/applications/<company>-<role>/resume.md`. Give them something they can send: a Word document if you can create files (a PDF too if they ask), otherwise clean text to copy into Word. Name the Word file `<Name>-Resume-<company>-<role>.docx` (`.pdf` for a PDF), using their first and last name and the company and role as the posting writes them, words joined by hyphens, so a recruiter can tell whose it is and they can tell applications apart. A Markdown file is not a finished resume for this user. Add what you emphasized and why, and the gaps to be ready for.
 
 7. **Offer a note, once.** Either a message to the recruiter (under 120 words: one specific reason they fit, one number, one ask) or a cover letter (under 250 words, opening with the problem the job exists to solve). Same facts, same voice, and the stranger test applies: a note that could go to any employer isn't worth sending. Save it as `note.md` beside the resume.
 
