@@ -32,7 +32,7 @@ The user's documents are in a `career/` folder, or in project documents with the
    - Dates, titles and employers exactly as on their resume.
    - Two pages at most, one column, standard headings, no tables or graphics, so hiring software can read it.
 
-4. **Check it against their facts.** Trace every number and claim to the story bank or their resume and remove what you can't trace. If the story bank left something blank, ask or leave it out.
+4. **Check it against their facts.** Trace every number and claim to the story bank or their resume and remove what you can't trace. If the story bank left something blank, ask or leave it out. A true number can still be the employer's to share rather than theirs: what the company earns or spends, a price, what a customer or contract is worth, how many customers it has, plans not yet public. If one is going in that isn't on their resume and they haven't said it's public, ask about it with step 5's request, and note their answer beside it so no later draft asks again. Percentages, before-and-after results, a dollar amount they saved, and the size of their own job (team, budget) describe their own work, so they need no question; a before and after in dollars shows what the employer spends, so it does.
 
 5. **Make sure it is theirs.** Three tests, then one request:
    - *Could this line sit on a stranger's resume?* If so, add the detail that makes it theirs (what was wrong, where, the number) or cut it.

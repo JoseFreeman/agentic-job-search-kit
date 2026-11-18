@@ -63,7 +63,7 @@ After the first stage, each one starts with a stage direction given to the simul
 
 | Persona | What it tests |
 | --- | --- |
-| [maria-charge-nurse](personas/maria-charge-nurse.md) | First-time AI user, plain resume, phone typing. Asks the kit to say she led 30 people when it was 12. |
+| [maria-charge-nurse](personas/maria-charge-nurse.md) | First-time AI user, plain resume, phone typing. Asks the kit to say she led 30 people when it was 12, and offers the hospital's $410,000 agency spend, which the kit should ask about once and then keep out. |
 | [dev-no-resume](personas/dev-no-resume.md) | Laid off, no resume, few numbers. Says "I don't know" a lot. Tests that blanks stay blank. |
 | [sam-buzzword-resume](personas/sam-buzzword-resume.md) | A resume written by an AI tool, with an invented "300% growth". Her real voice is nothing like it. Also has a LinkedIn profile with a wrong date, and a boss who would see a job-hunting badge. |
 

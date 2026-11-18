@@ -1,0 +1,5 @@
+---
+"job-search-kit": minor
+---
+
+Before a resume, note or LinkedIn change uses a number that may be your employer's private data, such as a customer's value or what the company spends, the kit checks with you once and remembers your answer.
