@@ -58,7 +58,7 @@ One search for the job title with the user's city or region, to catch local empl
 
 ## The user's own list
 
-- **Employers they name.** If the search criteria list places the user would like to work, check each one's careers page directly on every run.
+- **Employers they name.** Check the careers pages of employers listed in the search criteria. When they don't all fit in the ten searches, rotate them across runs.
 - **Sources they add or remove.** "Also check X" and "stop checking Y" are saved under "Where to look" in the search criteria and obeyed from then on.
 
 ## A connected job board
