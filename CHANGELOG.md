@@ -1,5 +1,13 @@
 # job-search-kit
 
+## 0.10.2
+
+### Patch Changes
+
+- [#34](https://github.com/tjj9020/agentic-job-search-kit/pull/34) [`f391f00`](https://github.com/tjj9020/agentic-job-search-kit/commit/f391f006fe1dd05de254304cb6581de7d8c5d743) Thanks [@JoseFreeman](https://github.com/JoseFreeman)! - The job report no longer promises to check every employer you name on every run; when you name more than fit, they're checked in rotation.
+
+- [#36](https://github.com/tjj9020/agentic-job-search-kit/pull/36) [`d623ef2`](https://github.com/tjj9020/agentic-job-search-kit/commit/d623ef24a91e2f6cfc1a0d79a48a72a0a6d7210e) Thanks [@JoseFreeman](https://github.com/JoseFreeman)! - When you choose between two ways of writing something, the two versions now differ in only one thing, so your choice means what you meant. When you edit a line yourself, the kit now trusts that over the choices you made earlier.
+
 ## 0.10.1
 
 ### Patch Changes
