@@ -99,8 +99,13 @@ const appFile = (wd, name) => {
   return existsSync(dir) && readdirSync(dir).some((d) => existsSync(join(dir, d, name)));
 };
 
-// A voice profile counts as approved only if a line says so without also saying "not yet".
-const voiceApproved = (text) => text.split("\n").some((l) => /\bapproved\b/i.test(l) && !/\bnot\b|\bun-?approved\b|\bdraft\b|\bpending\b|\bawaiting\b|\buntil\b|\bonce\b|\bwhen\b/i.test(l));
+// A voice profile counts as approved only if its "Status:" line says so without also saying "not yet",
+// as job-search decides it. Other lines are ignored: the profile labels approved sample bullets
+// ("(APPROVED, keep)", "## Approved examples") long before the whole profile is approved.
+const voiceApproved = (text) => {
+  const status = text.match(/\bstatus\W*:(.*)/i)?.[1] || "";
+  return /\bapproved\b/i.test(status) && !/\bnot\b|\bun-?approved\b|\bdraft\b|\bpending\b|\bawaiting\b|\buntil\b/i.test(status);
+};
 
 // Each stage after the first begins with a stage direction to the simulated person:
 // what has happened in their life. They then tell the assistant in their own words,
