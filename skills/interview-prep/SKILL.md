@@ -27,7 +27,7 @@ Ask for what you don't have: the posting, the kind of interview (recruiter call,
 
 3. **Match each to a story.** Show a table: the question, the story that answers it, how well, and a backup. Point out any story they would lean on more than twice.
 
-4. **Sketch the answers.** For each: the situation in a line, what they did in two or three, the result with its number, and what they learned. About 90 seconds spoken, in their phrases. Leave out any figure marked "keep private" in the story bank: saying it to an interviewer shares it too.
+4. **Sketch the answers.** For each: the situation in a line, what they did in two or three, the result with its number, and what they learned. About 90 seconds spoken, in their phrases.
 
 5. **Plan the gaps.** Where no story fits, write the honest answer: the nearest thing they have done, what they haven't, and how they would close the distance. If they may have a story you haven't heard, ask.
 
