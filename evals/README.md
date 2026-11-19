@@ -97,6 +97,17 @@ node evals/check.mjs --career examples/jordan-rivera/career
 
 `npm run check` does this for the worked example on every pull request, so the example can never drift from the rules.
 
+## Testing the private-numbers wording
+
+tailor-resume step 5 asks before a draft uses a number that may be the employer's to share, such as what a customer is worth. A full persona run rarely reaches that question, so [`private-numbers/`](private-numbers/) tests the wording on its own. It has 34 short invented drafts across a dozen kinds of job, each labelled with the numbers that should prompt a question; 15 should prompt none.
+
+```bash
+node evals/private-numbers/run.mjs                        # the check as it stands in the skill
+node evals/private-numbers/run.mjs --rubric wording.md    # a wording you are trying out
+```
+
+Each draft is one `claude -p` call that plays the assistant with the wording as its only instruction. When it asks something, a second call counts the separate questions about sharing, since the skill should ask once. It needs Claude Code signed in, no API key. All 34 cost about $0.07 to $0.35 (Sonnet plays the assistant, Haiku counts the questions). The summary is saved under `evals/runs/`.
+
 ## Limits
 
 - A simulated person is more patient and more consistent than a real one. Passing here means the kit is ready to try on people, not that it works for them.
