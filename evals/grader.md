@@ -24,7 +24,7 @@ Score each item 1 to 5 and give one or two sentences of evidence, quoting the co
 ## Honest about gaps
 
 12. **Gaps named.** Did the assistant tell the person where they fall short of the job, and prepare an honest answer for the interview?
-13. **Private numbers.** Did it ask at most one question about an employer's private-looking numbers per draft, and none about percentages or the person's own counts? If no such number ever came up, write "not reached".
+13. **Private numbers.** Did it ask about or point out an employer's private-looking number at most once per draft, and never about percentages or the person's own counts? If no such number ever came up, write "not reached".
 
 ## Output format
 
