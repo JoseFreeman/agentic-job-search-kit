@@ -99,12 +99,15 @@ const appFile = (wd, name) => {
   return existsSync(dir) && readdirSync(dir).some((d) => existsSync(join(dir, d, name)));
 };
 
-// A voice profile counts as approved only if its "Status:" line says so without also saying "not yet",
-// as job-search decides it. Other lines are ignored: the profile labels approved sample bullets
-// ("(APPROVED, keep)", "## Approved examples") long before the whole profile is approved.
+// A voice profile counts as approved only if its "Status:" line says so, as job-search decides it.
+// Only the words before the last "approved" count, so "approved March 5; updated when…" passes,
+// while "to be approved when…" and "samples approved; whole profile not yet approved" don't.
+// Other lines are ignored: the profile labels approved sample bullets ("(APPROVED, keep)",
+// "## Approved examples") long before the whole profile is approved.
 const voiceApproved = (text) => {
   const status = text.match(/\bstatus\W*:(.*)/i)?.[1] || "";
-  return /\bapproved\b/i.test(status) && !/\bnot\b|\bun-?approved\b|\bdraft\b|\bpending\b|\bawaiting\b|\buntil\b/i.test(status);
+  const before = status.match(/^(.*)\bapproved\b/i);
+  return !!before && !/\bnot\b|\bun-?$|\bdraft\b|\bpending\b|\bawaiting\b|\buntil\b|\bonce\b|\bwhen\b|\bto be\b|\bwill be\b|\bif\b/i.test(before[1]);
 };
 
 // Each stage after the first begins with a stage direction to the simulated person:
